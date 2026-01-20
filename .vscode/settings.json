@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript"],
+  "eslint.workingDirectories": ["."],
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/coverage": true,
+    "**/.git": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/coverage": true
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.format.semicolons": "insert",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "jest.jestCommandLine": "npm test --",
+  "jest.autoRun": "off"
+}
