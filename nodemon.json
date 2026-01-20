@@ -1,0 +1,29 @@
+{
+  "watch": ["src/"],
+  "ext": "js,json",
+  "ignore": [
+    "tests/",
+    "node_modules/",
+    "coverage/",
+    "*.test.js",
+    "*.spec.js",
+    ".git/",
+    "README.md",
+    "package*.json"
+  ],
+  "exec": "node src/infrastructure/web/server.js",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "delay": 1000,
+  "verbose": false,
+  "restartable": "rs",
+  "colours": true,
+  "legacyWatch": false,
+  "signal": "SIGTERM",
+  "events": {
+    "restart": "echo '🔄 Reiniciando servidor...'",
+    "crash": "echo '💥 Servidor crashou - aguardando mudanças...'",
+    "start": "echo '🚀 Servidor iniciado com sucesso!'"
+  }
+}

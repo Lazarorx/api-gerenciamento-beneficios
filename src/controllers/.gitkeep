@@ -1,0 +1,2 @@
+# Camada de Interface (Controllers)
+# Responsável por receber requisições HTTP e chamar os casos de uso apropriados

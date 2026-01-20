@@ -1,0 +1,49 @@
+{
+  "name": "api-gerenciamento-beneficios",
+  "version": "1.0.0",
+  "description": "API REST para gerenciamento de benefícios corporativos usando Node.js, Express e Clean Architecture",
+  "main": "src/infrastructure/web/server.js",
+  "scripts": {
+    "start": "node src/infrastructure/web/server.js",
+    "dev": "nodemon",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --passWithNoTests",
+    "test:coverage": "jest --coverage --passWithNoTests",
+    "test:unit": "jest --testPathPattern=tests/unit --passWithNoTests",
+    "test:integration": "jest --testPathPattern=tests/integration --passWithNoTests",
+    "lint": "eslint src/ --no-error-on-unmatched-pattern",
+    "lint:fix": "eslint src/ --fix --no-error-on-unmatched-pattern",
+    "lint:check": "eslint src/ --max-warnings 0 --no-error-on-unmatched-pattern",
+    "clean": "rm -rf coverage/ node_modules/.cache/",
+    "setup": "npm install && npm run lint:check && npm test",
+    "validate": "npm run lint:check && npm run test:coverage"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "api",
+    "rest",
+    "clean-architecture",
+    "benefits",
+    "sqlite",
+    "sequelize"
+  ],
+  "author": "Desenvolvedor Junior",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.35.2",
+    "sqlite3": "^5.1.6",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.3",
+    "nodemon": "^3.0.2",
+    "eslint": "^9.17.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
