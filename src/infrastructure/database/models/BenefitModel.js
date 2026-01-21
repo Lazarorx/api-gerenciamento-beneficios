@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize');
 /**
  * Define o modelo Sequelize para a entidade Benefit
  * Este modelo representa a estrutura da tabela no banco de dados
- * 
+ *
  * @param {Sequelize} sequelize - Instância do Sequelize
  * @returns {Model} Modelo Benefit do Sequelize
  */

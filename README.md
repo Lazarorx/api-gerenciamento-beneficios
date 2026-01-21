@@ -99,6 +99,11 @@ A API estará disponível em `http://localhost:3000` (ou na porta configurada no
 
 ## Testes
 
+O projeto possui uma suite completa de testes com 200 testes passando e 87% de cobertura:
+
+- **Testes Unitários**: 158 testes (entidades, casos de uso, controllers, validators)
+- **Testes de Integração**: 42 testes (banco de dados, repositórios, API completa)
+
 Executar todos os testes:
 
 ```bash
@@ -117,7 +122,17 @@ Gerar relatório de cobertura:
 npm run test:coverage
 ```
 
-O projeto possui cobertura de testes para entidades, casos de uso, repositórios e integração com banco de dados.
+Executar apenas testes unitários:
+
+```bash
+npm run test:unit
+```
+
+Executar apenas testes de integração:
+
+```bash
+npm run test:integration
+```
 
 ## Documentação da API
 
